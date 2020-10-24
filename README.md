@@ -1,6 +1,6 @@
 
 # Protocol buffers
- # A little example about protobuffer and Golang
+ # A little example about protobuf and Golang
 
  ## What is it?   
     - IDL = interface description language
