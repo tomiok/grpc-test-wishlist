@@ -1,0 +1,29 @@
+message CreateWishListReq {
+    WishList wishList = 1;
+}
+
+message CreateWishListResp {
+    string wishListId = 1;
+}
+
+message AddItemReq {
+    Item item = 1;
+}
+
+message AddItemResp {
+    string itemId = 1;
+}
+
+message ListWishListReq {
+     string wishListId = 1;
+}
+
+message ListWishListResp {
+    repeated Item items = 1;
+}
+
+service WishListService {
+    rpc Create(CreateWishListReq) returns (CreateWishListResp);
+    rpc Add(AddItemReq) returns (AddItemResp);
+    rpc List(ListWishListReq) returns (ListWishListResp);
+}
