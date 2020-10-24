@@ -1,16 +1,21 @@
 
-*** Protocol buffers
+# Protocol buffers
+ # A little example about protobuff and Golang
 
-    IDL = interface description language
-    Multilenguaje
-    Serializacion optimizada (mas rapido que XML y json, menos propenso a errores)
+ ## What is it?   
+    - IDL = interface description language
+    - Multilenguage
+    - Optimized serialization (faster than XML, JSON)
+    - Less error prone
 
-    *** Que necesitamos?
-    - un archivo .proto
-    - compilador (protoc) => descargar aca: https://grpc.io/blog/installation/
+ ## What do we need 
+    - a .proto file
+    - a compiler for protobuffers  => Download here: https://grpc.io/blog/installation/
     
-documentacion: https://developers.google.com/protocol-buffers/docs/overview#simple
+ ## Documentation:
+    - https://developers.google.com/protocol-buffers/docs/overview#simple
 
-protoc --go_out=. --go_opt=paths=source_relative \
+## Command
+`protoc --go_out=. --go_opt=paths=source_relative \
     --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-    proto/wishlist.proto
+    proto/wishlist.proto`
