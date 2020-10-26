@@ -25,9 +25,9 @@ func main() {
 	serviceClient := pb.NewWishListServiceClient(conn)
 
 	res, err := serviceClient.Create(context.Background(), &pb.CreateWishListReq{
-		WishList:             &pb.WishList{
-			Id:                   generateID(),
-			Name:                 "my wishlist",
+		WishList: &pb.WishList{
+			Id:   generateID(),
+			Name: "my wishlist",
 		},
 	})
 
